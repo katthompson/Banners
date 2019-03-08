@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="ad.size" content="width=728,height=90">
+	<title>Natures Way Coconut Oil 728x90</title>
+	<style>
+		* {box-sizing:border-box;}
+      body { padding: 0; margin:0; width:300px; height:250px; overflow:hidden; position:relative;}
+		img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;} 
+		#animation {position:absolute; overflow: hidden;}
+		#frame1 {background:url(728x90_NW_Coconut_Oil_bg-brown.png) center center no-repeat; width:728px; height:90px; overflow:hidden;}
+		#logo {top:10px; right:9px;}
+		#first-bottle, #second-bottle, #third-bottle, #fourth-bottle {bottom:-18px; left:-36px;}
+		#cook {top:14px; left:268px; opacity:0;}
+		#play {top:42px; left:268px; opacity:0;}
+		#frame2 {background:url(728x90_NW_Coconut_Oil_bg-green.png) center center no-repeat; width:728px; height:90px; opacity:0; position:absolute; top:0; left:0; overflow:hidden;}
+		#flame {opacity:0; bottom:0px; left:306px; position:absolute; width:123px; height:250px;}
+		#flame-top {left:-22px; bottom:23px;}
+		#flame-left {left:-23px; top:160px;}
+		#flame-base {left:7px; bottom:0;}
+		#flirt {top:32px; left:268px; opacity:0;}
+		#frame3 {background:url(728x90_NW_Coconut_Oil_bg-yellow.png) center center no-repeat; width:728px; height:90px; opacity:0; position:absolute; top:0; left:0; overflow:hidden;}
+		#lemon-peel {opacity:0; bottom:-15px; left:307px;}
+		#love {top:30px; left:266px; opacity:0;}
+		#frame4 {background:url(728x90_NW_Coconut_Oil_bg-red.png) center center no-repeat; width:728px; height:90px; opacity:0; position:absolute; top:0; left:0; overflow:hidden;}
+		#razz {top:31px; left:266px; opacity:0;}
+		/*#raspberry {top:251px; left:45px; opacity:0;} */
+		#raspberry1 {top:251px; left:332px;}
+		#raspberry2 {top:251px; left:393px;}
+		#raspberry3 {top:251px; left:356px;}
+		#raspberry4 {top:251px; left:275px;}
+		#frame5 {background:url(728x90_NW_Coconut_Oil_bg-final.png) center center no-repeat; width:728px; height:90px; opacity:0; position:absolute; top:0; left:0; overflow:hidden;}
+		#bottle-group {left:306px; top:100px;}
+		#premium {left:23px; top:-43px;}
+		#button {right:-124px; top:35px; }
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>	
+	<script type="text/javascript">
+		var clickTag = "blank"; 
+   </script>
+</head>
+<body>
+	
+	<a id="cta" href="javascript:window.open(window.clickTag)">
+		<div id="animation">
+			
+			<div id="frame1">
+				<img id="first-bottle" src="728x90_NW_Coconut_Oil_bottle-original.png" width="35" height="106" />
+				<img id="cook" src="728x90_NW_Coconut_Oil_cook.png" width="139" height="20" />
+				<img id="play" src="728x90_NW_Coconut_Oil_play.png" width="268" height="37" />
+			</div>
+			<div id="frame2">
+				<div id="flame">
+					<img id="flame-top" src="728x90_NW_Coconut_Oil_flame-top.png" width="90" height="83" />
+					<img id="flame-left" src="728x90_NW_Coconut_Oil_flame-left.png" width="65" height="90" />
+					<img id="flame-base" src="728x90_NW_Coconut_Oil_flame-base.png" width="76" height="90" />
+				</div>
+				
+				<img id="second-bottle" src="728x90_NW_Coconut_Oil_bottle-jalapeno.png" width="36" height="103" />
+				<img id="flirt" src="728x90_NW_Coconut_Oil_flirt.png" width="291" height="29" />
+			</div>
+			<div id="frame3">
+				<img id="lemon-peel" src="728x90_NW_Coconut_Oil_lemon-peel.png" width="69" height="137" />
+				<img id="third-bottle" src="728x90_NW_Coconut_Oil_bottle-lemon.png" width="36" height="105" />
+				<img id="love" src="728x90_NW_Coconut_Oil_love.png" width="356" height="36" />
+			</div>
+			<div id="frame4">
+				<img id="raspberry1" src="728x90_NW_Coconut_Oil_raspberry1.png" width="39" height="38" />
+				<img id="raspberry2" src="728x90_NW_Coconut_Oil_raspberry2.png" width="47" height="44" />
+				<img id="raspberry3" src="728x90_NW_Coconut_Oil_raspberry3.png" width="45" height="43" />
+				<img id="raspberry4" src="728x90_NW_Coconut_Oil_raspberry-group.png" width="84" height="75" />
+				
+				<img id="fourth-bottle" src="728x90_NW_Coconut_Oil_bottle-raspberry.png" width="34" height="103" />
+				<img id="razz" src="728x90_NW_Coconut_Oil_razz.png" width="256" height="29" />
+			</div>
+			<div id="frame5">
+				<img id="bottle-group" src="728x90_NW_Coconut_Oil_bottle-group.png" width="196" height="136" />
+				<img id="premium" src="728x90_NW_Coconut_Oil_premium.png" width="264" height="42" />
+				<img id="button" src="728x90_NW_Coconut_Oil_button.png" width="122" height="21" />
+			</div>
+			<img id="logo" src="728x90_NW_Coconut_Oil_logo.png" width="44" height="26" />
+			
+		</div>
+	</a>
+	<script>
+		var tl = new TimelineMax({});
+		tl.to('#first-bottle',0.5, {left:211}, 0.4)
+		tl.to('#cook',1, {opacity:1}, 0.7)
+		tl.to('#play',1, {opacity:1}, 2.0)
+		tl.to('#frame1',0.5, {opacity:0}, 3.2)
+		tl.to('#frame2',0.5, {opacity:1}, 3.2)
+		tl.to('#flame',0.1, {scaleY:0.5, transformOrigin:"center bottom"}, 3.4)
+		tl.to('#second-bottle',0.5, {left:211}, 3.9)
+		tl.to('#flame',1, {scaleY:1,  transformOrigin:"center bottom", opacity:1, ease: Elastic. easeOut.config( 1, 0.5)}, 4.4)
+		tl.to('#flame-base',0.4, {opacity:0.8, scale:0.8, transformOrigin:"center bottom", repeat:20, yoyo:true}, 4.0)
+		tl.to('#flame-left',0.4, {opacity:0.8, repeat:20, scale:0.8, transformOrigin:"center bottom", yoyo:true}, 4.2)
+		tl.to('#flame-top',0.4, {opacity:0.8, repeat:20, scale:0.8, transformOrigin:"center bottom", yoyo:true}, 4.5)
+		tl.to('#flirt',1, {opacity:1}, 4.8)
+		tl.to('#frame2',0.5, {opacity:0}, 6.4)
+		tl.to('#frame3',0.5, {opacity:1}, 6.4)
+		tl.to('#lemon-peel',0.1, {scaleY:0.5, transformOrigin:"center bottom"}, 6.4)
+		tl.to('#third-bottle',0.5, {left:211}, 7.0)
+		tl.to('#lemon-peel',2.5, {scaleY:1,  transformOrigin:"center bottom", opacity:1, ease: Elastic. easeOut.config( 1, 0.1)}, 7.6)
+		tl.to('#love',1, {opacity:1}, 8.3)
+		tl.to('#third-bottle',1, {opacity:0}, 9.4)
+		tl.to('#lemon-peel',1, {opacity:0}, 9.4)
+		tl.to('#love',1, {opacity:0}, 9.4)
+		tl.to('#frame3',0.5, {opacity:0}, 9.7)
+		tl.to('#frame4',0.5, {opacity:1}, 9.7)
+		tl.to('#fourth-bottle',0.5, {left:211}, 10.3)
+		tl.to('#raspberry1',2.5, {top:-19, ease: Back.easeOut.config(2)}, 10.7)
+		tl.to('#raspberry2',2.5, {top:-2, ease: Back.easeOut.config(2)}, 10.7)
+		tl.to('#raspberry3',2.5, {top:63, ease: Back.easeOut.config(2)}, 10.7)
+		tl.to('#raspberry4',2.5, {top:52,  ease: Back.easeOut.config(2)}, 10.7)
+		tl.to('#razz',1, {opacity:1}, 11.7)
+		tl.to('#frame4',0.5, {opacity:0}, 13.7)
+		tl.to('#frame5',0.5, {opacity:1}, 13.7)
+		tl.to('#bottle-group',0.5, {top:-25}, 14.2)
+		tl.to('#premium',0.5, {top:24}, 14.2)
+		tl.to('#button',0.5, {right:79}, 14.7)
+		;
+	</script>
+</body>
+</html>s

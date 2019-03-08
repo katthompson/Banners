@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="ad.size" content="width=728,height=90" />
+		<title>DelMonte | 728x90</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+		<style type="text/css">
+			* {box-sizing:border-box;}
+			body { padding: 0; margin:0; width:728px; height:90px;}
+			img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;}		
+			#animation {overflow:hidden; width:728px; height:90px; position:relative;}
+			#backAnimation {width:728px; height:90px; position:relative;}
+			#frontAnimation {width:728px; height:90px; left:0; top:0; position:absolute; }
+			#kernels {width:728px; height:90px; left:0; top:0; position:absolute;}
+			#corn-cob {left:441px; top:0;}  
+			#l-leaf-1 {left:440px; top:50px;}
+			#l-leaf-2 {left:413px; top:31px;}
+			#l-leaf-3 {left:478px; top:58px;}
+			#r-leaf-3 {left:494px; top:5px;}
+			#r-leaf-2 {left:490px; top:-9px;}
+			#r-leaf-1 {left:490px; top:16px;}
+			#large-leaf {right:66px; top:0;}
+			#txt-picked {left:20px; top:27px;}			
+			#txt-only-the-best-goes-in {left:20px; top:27px;opacity:0;}
+			/*#txt-goes-in {left:15px; top:191px; opacity:0;}*/
+			#txt-group {position:absolute;}
+			#logo {top:10px; right: 34px;}
+			.kernel { transform:scale(0);}
+			
+			#kernel7 {left:477px; top:45px;} 			
+			#kernel8 {left:470px; top:28px;}
+			#kernel9 {left:490px; top:40px;}
+			#kernel10 {left:477px; top:25px;}
+			#kernel11 {left:490px; top:45px;}
+			#kernel12 {left:470px; top:28px;}
+			#can-corn { bottom: -100px;left:530px;}
+			#corn-relish{top:6px;left: 560px;}
+			#txt-your-dish {left:0px; top:6px; opacity:0;}
+			#txt-simply-delicious {left:9px; top:14px; opacity:0;}			
+			#txt-counts {top:20px; left:0; opacity:0;}
+			#button {bottom:34px; right:12px; opacity:0;}
+			#legal {bottom:0; right:2px; opacity:0;}			
+		</style>
+
+		<script type="text/javascript">
+			var clickTag = "blank"; 
+		</script>
+
+	</head>
+
+	<body>	
+
+		<a id="cta" href="javascript:window.open(window.clickTag)">
+			<div id="animation">
+				<div id="backAnimation">
+					<img id="background-table" src="background-table.jpg" />
+					<img id="txt-your-dish" src="txt-your-dish.png" />
+					<img id="txt-simply-delicious" src="txt-simply-delicious.png" />					
+					<img id="corn-relish" src="corn-relish.png" />
+					<img id="can-corn" src="can-corn.png" />
+					<img id="txt-counts" src="txt-counts.png" />
+					<img id="button" src="button.png" />
+					<img id="legal" src="legal.png" />
+				</div>
+				<div id="frontAnimation">
+					<img id="background-corn" src="background-corn.jpg" />
+					<img id="corn-cob" src="corn-cob.png" />
+					<img id="l-leaf-3" src="l-leaf-3.png" />
+					<img id="l-leaf-2" src="l-leaf-2.png" />					
+					<img id="l-leaf-1" src="l-leaf-1.png" />
+					<img id="r-leaf-3" src="r-leaf-3.png" />					
+					<img id="r-leaf-2" src="r-leaf-2.png" />
+					<img id="r-leaf-1" src="r-leaf-1.png" />
+					<img id="large-leaf" src="large-leaf.png" />
+					<img id="txt-picked" src="txt-picked.png" />					
+					<img id="txt-only-the-best-goes-in" src="txt-only-the-best-goes-in.png" />
+					<!--<img id="txt-goes-in" src="txt-goes-in.png" />-->
+					<img id="logo" src="logo.png" />
+				</div>
+				<div id="kernels">
+					
+					<img id="kernel7" class="kernel odd2" src="kernel.png" />
+					<img id="kernel8" class="kernel even2" src="kernel3.png" />
+					<img id="kernel9" class="kernel odd2" src="kernel2.png" />
+					
+					<img id="kernel10" class="kernel even2" src="kernel.png" />
+					<img id="kernel11" class="kernel odd2" src="kernel3.png" />
+					<img id="kernel12" class="kernel even2" src="kernel2.png" />
+					
+				</div>
+			</div>
+		</a>
+
+		<script>
+			var tl = new TimelineMax({});
+			tl
+			.to('#l-leaf-3',1, {rotation:-6, transformOrigin:"100% 50%" }, 1.3)
+			.to('#l-leaf-2',1, {rotation:-10, transformOrigin:"100% 50%" }, 1.3)
+			.to('#l-leaf-1',1, {rotation:-10, transformOrigin:"100% 100%" }, 1.3)
+			.to('#r-leaf-1',1, {rotation:30, transformOrigin:"80% 90%" }, 1.3)
+			.to('#r-leaf-2',1, {rotation:33, transformOrigin:"100% 80%" }, 1.3)
+			.to('#r-leaf-3',1, {rotation:15, transformOrigin:"85% 50%" }, 1.3)			
+			.to('#txt-picked', 0.5, {opacity:0}, 1.8)
+			.to('#txt-only-the-best-goes-in',0.5, {opacity:1 }, 2.5)
+			.to('#txt-only-the-best-goes-in, #logo',0.3, {opacity:0 }, 4)
+			.to('#background-corn', 0.5, {left:-120}, 4.2)
+			.to('#frontAnimation', 2.5, {left:-728}, 4.4)			
+			
+			.to('#txt-your-dish', 0.5, {opacity:1}, 0)
+			.to('#txt-your-dish', 0.5, {opacity:0}, 8.3) 
+			
+			 .to('#txt-simply-delicious', 0.5, {opacity:1}, 8.8)
+			 .to('#txt-simply-delicious', 0.5, {opacity:0}, 10.3)
+						
+			 .to('#can-corn', 0.5, {bottom:0},10.5)
+			 .to('#corn-relish', 0.5, {left:418},10.5)
+			 .to('#txt-counts', 0.5, {opacity:1}, 11)
+			 .to('#button', 0.5, {opacity:1}, 11)
+			 .to('#legal', 0.5, {opacity:1}, 11)  
+			;
+			
+			
+			
+			var corntl = new TimelineMax();
+			corntl
+			
+			 .staggerTo('.odd2',0.5, { scale:0.4},0.2, 4.5)  
+			 .staggerTo('.odd2', 2, {bezier:{curviness:1, values:[{left:540, top:-18},{left:600, top:15}]}},0.2, 3.7)
+			 .staggerTo('.odd2', 2.5, {rotation:50},0.5, 3.3)
+			 .staggerTo('.odd2',0.5, { scale:0.3},0.5, 4.5)
+			
+			 .staggerTo('.even2',0.5, { scale:0.4},0.2, 3.5)
+			 .staggerTo('.even2', 2, {bezier:{curviness:1, values:[{left:550, top:-28},{left:590, top:15}]}},0.2, 3.9)
+			 .staggerTo('.even2', 2.5, {rotation:80},0.5, 3.5)
+			 .staggerTo('.even2',0.5, { scale:0.3},0.5, 4.5)
+			
+			 .to('.odd2, .even2', 0.5, {opacity:0}, 5.8)
+			;
+			
+			
+
+			
+		</script>
+
+
+	</body>
+</html>

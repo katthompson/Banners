@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="ad.size" content="width=320,height=50" />
+		<title>AT&amp;T | 320x50</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+		<style type="text/css">
+			* {box-sizing:border-box;}
+			body { padding: 0; margin:0; width:320px; height:50px; border:1px solid #0586cb;}
+            div {position:absolute;}
+			img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;}		
+			#animation {overflow:hidden; width:320px; height:50px; position:relative;}
+            #bg1 {width:320px; height:50px; background-color:#0586cb; opacity:1; top:0; left:0;}
+            .txt-ATT {top:10px; left:57px;}
+            .txt-enhanced {top:26px; left:142px;}
+           
+            #bg2 {width:320px; height:1175px; background:url(bg.png) left -25px no-repeat ; padding:1px; opacity:0; top:0; left:0;}
+            #bg3 {width:320px; height:50px; background-color:#0586cb; top:0; left:0; opacity:0;}
+            span.dot {display:block; width:2px; height:2px; border-radius:1px; background-color:#fff; margin:1px; opacity:0;}
+            .waves {top:3px; left:68px; opacity:0;}
+            .phone1 {top:10px; left:49px;}
+            .phone2 {top:82px; left:49px;}
+            .phone2-unavailable {top:82px; left:49px; opacity:0;}
+            .phone3 {top:82px; left:74px;}
+            .phone3-unavailable {top:82px; left:74px; opacity:0;}
+            .phone4 {top:82px; left:99px;}
+            .phone4a {top:82px; left:99px; opacity:0;}
+            .phone4-connected {top:160px; left:99px; opacity:0;}
+            .phone5 {top:160px; left:54px;}
+            .phone5-connected {top:160px; left:54px; opacity:0;}
+            #dots1 {top:46px; left:57px;}
+            #dots2 {top:64px; left:57px;}
+            #dots3 {top:61px; left:57px;}
+            #dots3 span.dot {float:left; margin:1px;}
+            #dots4 {top:64px; left:85px;}
+            #dots5 {top:64px; left:109px;}
+            #dots6 {top:70px; left:109px;}
+            #dots7 {top:177px; left:82px;}
+            #dots7 span.dot {float:left; margin:1px; }
+            .txt-customer-calls {top:18px; right:63px;}
+            .repA {top:76px; left:55px;}
+            .repB {top:76px; left:81px;}
+            .repC {top:76px; left:105px;}
+            .txt-call-routed {top:73px; right:51px; opacity:0;}
+            .txt-customer-connected {top:162px; right:34px; opacity:0;}
+		</style>
+
+		<script type="text/javascript">
+			var clickTag = "blank"; 
+		</script>
+
+	</head>
+
+	<body>	
+
+		<a id="cta" href="javascript:void(window.open(window.clickTag))">
+			<div id="animation">
+                <div id="bg1">
+                    <img class="txt-ATT" src="txt-frame1.png"/>
+                    <img class="txt-enhanced" src="txt-enhanced.png" />
+                </div>
+				<div id="bg2">
+                    <img class="phone1" src="phone1.png" />
+                    <img class="txt-customer-calls" src="txt-customer-calls.png" />
+                    <img class="waves" src="waves.png" />
+
+                    <div id="dots1">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                        
+                    </div>
+                    <div id="dots2">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                        
+                    </div>
+                    <div id="dots3">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                    </div>
+                    <div id="dots4">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                        
+                    </div>
+                    <div id="dots5">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                        
+                    </div>
+                    
+                    <img class="txt-call-routed" src="txt-call-routed.png" />
+                    <img class="repA" src="txt-rep-a.png" />
+                    <img class="phone2" src="phone-incoming.png" />
+                    <img class="phone2-unavailable" src="phone-unavailable.png" />
+                    
+                    <img class="repB" src="txt-rep-b.png" />
+                    <img class="phone3" src="phone-incoming.png" />
+                    <img class="phone3-unavailable" src="phone-unavailable.png" />
+                    
+                    <img class="repC" src="txt-rep-c.png" />
+                    <img class="phone4" src="phone-incoming.png" />
+                    <img class="phone4a" src="phone-incoming-green.png" />
+                    <img class="phone4-connected" src="phone-your-customer-connected.png" />
+                    
+                    
+                    <div id="dots6">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                    </div>
+                    <img class="phone5" src="phone1.png" width="22" height="40"/>
+                    <img class="phone5-connected" src="phone-your-business-connected.png" />
+                    
+                    <div id="dots7">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        
+                        
+                    </div>
+                    <img class="txt-customer-connected" src="txt-customer-connected.png" />
+                </div>
+                <div id="bg3">
+                    <img src="backup.jpg" />
+                </div>
+			</div>
+		</a>
+
+		<script>
+            //greensock loses css transformation info so need to set it here
+			TweenMax.set('.waves', {scale:0, transformOrigin:"left bottom"});
+			var tl = new TimelineMax({});
+			tl
+            .fromTo('.txt-enhanced',0.05, {x:0, rotation:0},{x:5, rotation:0.5, repeat:20,yoyo:true,ease:Sine.easeInOut,onComplete:function(){TweenMax.to(this.target,.01,{x:0,ease:Elastic.easeOut})}}, 1)
+            .to('.txt-enhanced', 0.7, {scale:20, y:-150,  ease:Power1. easeIn }, 2)
+            .to('#bg1', 0.3, {backgroundColor:"#fff"}, 2.3)
+            .to('#bg1', 0.1, {opacity:0}, 2.8)
+            .to('#bg2', 0.5, {opacity:1}, 2.5)
+            .to('.waves', 0.5, {opacity:1, scale:1}, 3.2)
+            //stagger first number is animation time, last number is stagger time
+            .staggerTo('#dots1 .dot', 0.3, {alpha:1, delay:0}, 0.2) 
+            .to('#bg2', 1.5, {y:-56}, 4) 
+            .add("split1", 5.0) 
+            .to('.txt-call-routed', 0.5, {opacity:1}, 5.5)
+            .staggerTo('#dots2 .dot', 0.3, {opacity:1 }, 0.2, "split1")
+            .staggerTo('#dots3 .dot', 0.3, {opacity:1 }, 0.1, "split1+=0.8")
+			.staggerTo('#dots4 .dot', 0.3, {opacity:1 }, 0.2, "split1+=1.5")
+			.staggerTo('#dots5 .dot', 0.3, {opacity:1 }, 0.1, "split1+=2.2")
+            .to('#dots2', 0.2, {opacity:0}, 6.4)
+            .to('.phone2-unavailable', 0.2, {opacity:1}, 6.3)
+            .to('#dots4', 0.2, {opacity:0}, 7.7)  
+            .to('.phone3-unavailable', 0.2, {opacity:1}, 7.5)
+            .to('.phone4a',0.05, {opacity:1},7.7)
+            .to('.phone4', 0.05,{opacity:0},7.8)
+            .to('.phone4a', 2.0,{y:78},8)  
+            .to('.repC', 0.2,{opacity:0},7.8)
+            .to('#bg2', 2, {y:-155,ease: Power0.easeNone }, 8)
+            .add("split2", 7.8)
+            .staggerTo('#dots6 .dot', 0.3, {opacity:1 }, 0.08, "split2")
+            .add("split3", 10)
+            .staggerTo('#dots7 .dot', 0.3, {opacity:1 }, -0.1, "split3") 
+            .to('.phone4-connected', 0.2, {opacity:1}, 11)
+            .to('.phone5-connected', 0.2, {opacity:1}, 11)
+            .to('.txt-customer-connected', 0.2, {opacity:1}, 11)
+            .to('#bg3', 0.3, {opacity:1}, 12.4)
+			;
+			
+			
+			
+		</script>
+
+
+	</body>
+</html>

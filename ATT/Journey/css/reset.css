@@ -1,0 +1,44 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+select,input,button,textarea,button {resize:none;}
+table {font-size:inherit;}
+
+.none {display:none;}
+.hidden {visibility:hidden;}
+
+/* CSS-based preload for standalone hover images (insert images into div with preload ID, adjust to taste) */
+#preload {display:block;z-index:-1;position:fixed;top:-1000px;left:0;width:auto;height:0px;overflow:hidden;}
+#preload img {display:inline-block;float:left;width:1px;height:1px}
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+
+html, body { /*height:100%;*/ min-height:100%; margin:0; padding:0; width:100%; } 
+
+/*.clearfix { display: inline-block; }*/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/* image scaling integrity, after-gap issues, and no-border links */
+img { border:none; display:block; -ms-interpolation-mode:bicubic; }
+
+/*Remove the gray background color from active links in IE 10.*/
+a { background: transparent; }
+
+/*Prevent `sub` and `sup` affecting `line-height` in all browsers.*/
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/*used to force styling of input elements */
+/*select, input[type=checkbox], input[type=radio], 
+input[type="button"], input[type="reset"], input[type="submit"] 
+{ -webkit-appearance: none; -moz-appearance:none; appearance:none;  }*/
+
+/*removes extra padding on buttons that Firefox injects.*/
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+/* display only in a screen reader */
+.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+:focus {outline:none;}

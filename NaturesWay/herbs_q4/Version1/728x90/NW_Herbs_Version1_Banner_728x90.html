@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="ad.size" content="width=728, height=90" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Natures Way Version1 Herbs</title>
+		<style type="text/css" media="screen">
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			html, body {
+				width: 728px;
+				height: 90px;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background-color: #fff;
+			}
+			img {
+				display: block;
+				border: none;
+				position: absolute;
+			}
+			p {margin: 0;}
+
+			#container {
+				position: relative;
+				overflow: hidden;
+				width: 728px;
+				height: 90px;
+				border: 1px solid #bcbec0;
+			}
+			.logo {
+				top: 29px;
+				left: 10px;
+			}
+			.sky {
+				bottom: -1px;
+				left: -1px;
+			}
+			.mountains {
+				left: -1px;
+				bottom: -1px;
+			}
+			.products {
+				left: 104px;
+				bottom: -1px;
+			}
+			.txt-we-go-where {
+				top: 10px;
+				left: 341px;
+			}
+			.txt-herbs-grow-best {
+				top: 5px;
+				left: 300px;
+				transform: scale(1.05);
+				opacity: 0;
+			}
+			.farmer {
+				opacity: 0;
+				transform: scale(3.6);
+				top: -45px;
+				left:  60px;
+			}
+			.txt-to-growers-who-deliver {
+				top: 18px;
+				right: 41px;
+				opacity: 0;
+			}
+			.txt-the-best-of-nature {
+				top: 13px;
+				right: 57px;
+				opacity: 0;
+			}
+			.cta-button {
+				right: 53px;
+				bottom: 9px;
+				opacity: 0;
+			}
+		</style>
+		<script type="text/javascript">var clickTag = "blank";</script>
+	</head>
+	<body>
+		<a href="javascript:window.open(window.clickTag)">
+			<div id="container">
+				
+				<img class="sky" src="sky.jpg" alt="Sky" />
+				<img class="mountains" src="mountains.png" alt="Mountains" />
+				
+				<img class="txt-we-go-where" src="txt-we-go-where.png" alt="We go where text" />
+				<img class="txt-herbs-grow-best" src="txt-herbs-grow-best.png" alt="Herbs grow best text" />
+				<img class="farmer" src="farmer.png" alt="Farmer" />
+				<img class="txt-to-growers-who-deliver" src="txt-to-growers-who-deliver.png" alt="To growers who deliver text" />
+				<img class="txt-the-best-of-nature" src="txt-the-best-of-nature.png" alt="The best of nature text" />
+				<img class="cta-button" src="button.png" alt="CTA Button" />
+				
+				<img class="products" src="products.png" alt="Products" />
+				<img class="logo" src="logo.png" alt="Logo" />
+				
+			</div>
+		</a>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script type="text/javascript">
+			
+			var tl = new TimelineMax({ repeat: 0 });
+			
+			tl
+			.to('.sky', 15, {x:-99, y:5, ease:Power0.easeNone}, 0)
+			.to('.txt-we-go-where', 0.4, {opacity:0}, 2)
+			.to('.txt-herbs-grow-best', 0.4, {scale:1, opacity:1}, 2.4)
+			.to('.txt-herbs-grow-best', 0.4, {opacity:0}, 4.8)
+			.to('.farmer', 2.7, {x:-61, y:44, scale:1, opacity:1, rotationZ:0.01, ease:Expo.easeOut, force3D:false}, 5.2)
+			.to('.mountains', 2.7, {y:7}, 5.2)
+			.to('.txt-to-growers-who-deliver', 0.4, {opacity:1}, 7)
+			.to('.txt-to-growers-who-deliver', 0.4, {opacity:0}, 9.4)
+			.to('.txt-the-best-of-nature', 0.4, {opacity:1}, 9.8)
+			.to('.cta-button', 1, {opacity:1}, 11)
+			;
+			
+		</script>
+	</body>
+</html>

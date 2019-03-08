@@ -1,0 +1,453 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico" >
+    <title>ATT Journey</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/magnific.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+		<script src="js/Draggable.js"></script>
+		<script src="js/ScrollToPlugin.js"></script>
+		<script src="js/picturefill.min.js"></script>
+		<script src="js/magnific.min.js"></script>
+		
+		<script src="js/main.js"></script>
+		
+  </head>
+  <body>
+		<picture>
+			<source media="(max-width: 768px)" srcset="images/logo-tablet.png">
+			<img srcset="images/logo.png" class="att-logo" alt="AT&T Business" />
+		</picture>
+		<img src="images/epsilon.png" class="epsilon-logo" alt="Aspen Marketing Epsilon" />
+		<div class="mobile-nav-open">
+			<img src="images/mobile-open.png" />
+		</div>
+		<nav class="nav-right">
+			<a class="mobile-nav-close"><img src="images/mobile-close.png" alt="close mobile navigation" /></a>
+			<a class="signals">SIGNALS</a>
+			<div class="mobile-line si"></div>
+			<a class="truth">TRUTH</a>
+			<div class="mobile-line tr"></div>
+			<a class="rules">RULES</a>
+			<div class="mobile-line ru"></div>
+			<a class="deployment">DEPLOYMENT</a>
+			<div class="mobile-line de"></div>
+			<a class="analysis">ANALYSIS</a>
+			<div class="mobile-line an"></div>
+			<div class="nav-footer clearfix">
+				<img src="images/logo-mobile-nav.png" alt="att logo" />
+				<img src="images/epsilon-mobile-nav.png" alt="epsilon logo" />
+			</div>
+		</nav>
+		<div class="intro">
+			<div>
+				<h1>Welcome to <br/>Transformational<br/>Marketing</h1>
+			</div>
+		</div>
+		<p class="goal">Creating customer-centric conversations through highly targeted, 1:1 communications.</p>
+		
+		
+		<div class="nav-left">
+			<div class="anchors">
+				<a class="signals"><img src="images/nav-signals.png" alt="Signals"/><br/>SIGNALS</a>
+				<a class="truth"><img src="images/nav-truth.png" alt="Truth"/><br/>SINGLE VIEW</a>
+				<a class="rules"><img src="images/nav-rules.png" alt="Rules"/><br/>RULES</a>
+				<a class="deployment"><img src="images/nav-deployment.png" alt="Deployment"/><br/>DEPLOYMENT</a>
+				<a class="analysis"><img src="images/nav-analysis.png" alt="Analysis"/><br/>ANALYSIS</a>
+			</div>
+			<div class="vertical-bar" id="leftNav">
+				<div class="vb-inner"></div>
+				<div class="bar"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+			<div class="section start-line">
+				<div class="col1">&nbsp;</div>
+				<div class="col2"><div class="line"></div></div>
+				<div class="col3">&nbsp;</div>
+
+			</div>
+			
+			<div id="Signals" class="section">
+				
+				<div class="col1">
+					&nbsp;
+				</div>
+				
+				<div class="col2">
+					<div class="icon-rain">
+						<img src="images/icon-grid.png" class="grid1" alt="representation of moving signal" data-no-retina/>
+						<img src="images/icon-grid.png" class="grid2" alt="representation of moving signal" data-no-retina/>
+						<div class="hide-left"></div>
+						<div class="hide-right"></div>
+					</div>
+					<div class="signals-img">
+						<picture>
+							<source media="(max-width: 599px)" srcset="images/signals-mobile.png" data-no-retina>
+							<source media="(max-width: 768px)" srcset="images/signals-tablet.png" data-no-retina>
+							<img src="images/signals.png" class="signal-device" alt="" data-no-retina/>
+						</picture>
+						
+						<div class="signals-rain">
+							<img src="images/signals-grid.png" class="signal-grid1" alt="representation of moving signal" data-no-retina/>
+							<img src="images/signals-grid.png" class="signal-grid2" alt="representation of moving signal" data-no-retina/>
+						</div>
+					</div>
+					<div class="signal-stream">
+						<img src="images/signals-line.png" class="signal-line1" alt="representation of moving signal" data-no-retina/>
+						<img src="images/signals-line.png" class="signal-line2" alt="representation of moving signal" data-no-retina/>
+					</div>
+				</div>
+				<div class="col3">
+					<h2>Signals collected</h2>
+					<div class="title-line"></div>
+					<div class="info">
+						<p>The journey starts with collecting audience signals as they interact with communications across all channels. The signals provide specific data on each customer&mdash;current and prospective.</p>
+					</div>
+
+				</div>
+			</div>
+			
+			<div id="Truth" class="section">
+				<div class="col1 white-popup" id="Truth-popup">
+					<h2>
+						<span class="t-trigger1 none">Data <br class="hidden-mobile"/>cleansed</span>
+						<span class="t-trigger2 none">Data <br class="hidden-mobile"/>de-duped</span>
+						<span class="t-trigger3 none">Data <br class="hidden-mobile"/>keyed</span>
+						<span class="t-trigger4 none">CDM</span>
+					</h2>
+					<div class="title-line"></div>
+					<div class="info t-trigger1 none">
+						<p>As the signals are collected, the data is cleansed and standardized.</p>
+					</div>
+					<div class="info t-trigger2 none">
+						<p>When the system finds multiple records, they are de-duped and combined into a single view.</p>
+					</div>
+					<div class="info t-trigger3 none">
+						<p>The data is given a unique and persistent identifier for business accounts and contacts. This is the first step in establishing a single view of your customer.</p>
+					</div>
+					<div class="info t-trigger4 none">
+						<p>The customer data-mart is essential to transformational marketing, as it houses all of the customer data. The data is categorized into:</p>
+						<p><span>Account</span> &ndash; The actual business and attributes about the business. For example: Business Name, Line of Business, Segment, # of employees.</p>
+						<p><span>Contacts</span> &ndash; The contacts linked to the business and attributes about the contact. For example: Contact Name, Title, Department, Phone, Email Address.</p>
+						<p><span>Addresses</span> &ndash; The addresses associated with the account and contacts, includes attributes such as Product Eligibility and Competitors at the address location.</p>
+						<p><span>Products and Contract Types</span> &ndash; AT&amp;T Business products and contract details associated with an account. For example: Product Group, Quantity, Amount, Contract Term and Renewal Date. </p>
+					</div>
+					<div class="close"><img src="images/close.png" alt="close" /></div>
+				</div>
+				<div class="col2">
+					<div class="truth-mod1">
+						<picture>
+							<source media="(max-width: 599px)" srcset="images/truth-mod1-mobile.png">
+							<img src="images/truth-mod1.png" alt="" class="truth-img1" />
+						</picture>
+
+						<img src="images/back-forth-line.png" alt="" class="back-forth"/>
+						<a id="Ttrigger1" href="#Truth-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+					</div>
+					<div class="signal-group">
+						<div class="group1">
+							<img src="images/group1.png" alt="" class="group1-1" data-no-retina />
+							<img src="images/group1.png" alt="" class="group1-2" data-no-retina/>
+						</div>
+						<div class="group2">
+							<img src="images/group2.png" alt="" class="group2-1"  data-no-retina/>
+							<img src="images/group2.png" alt="" class="group2-2"  data-no-retina/>
+						</div>
+						<div class="group3">
+							<img src="images/group3.png" alt="" class="group3-1"  data-no-retina/>
+							<img src="images/group3.png" alt="" class="group3-2"  data-no-retina/>
+						</div>
+						<div class="group4">
+							<img src="images/group4.png" alt="" class="group4-1" data-no-retina />
+							<img src="images/group4.png" alt="" class="group4-2" data-no-retina />
+						</div>
+						<div class="group5">
+							<img src="images/group5.png" alt="" class="group5-1" data-no-retina />
+							<img src="images/group5.png" alt="" class="group5-2" data-no-retina />
+						</div>
+						<div class="group6">
+							<img src="images/group6.png" alt="" class="group6-1" data-no-retina />
+							<img src="images/group6.png" alt="" class="group6-2" data-no-retina />
+						</div>
+						<div class="group7">
+							<img src="images/group7.png" alt="" class="group7-1" data-no-retina />
+							<img src="images/group7.png" alt="" class="group7-2" data-no-retina />
+						</div>
+						<a id="Ttrigger2" href="#Truth-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse" /></a>
+					</div>
+					<div class="truth-mod2">
+						<picture>
+							<source media="(max-width: 599px)" srcset="images/truth-mod2-mobile.png" >
+							<source media="(max-width: 768px)" srcset="images/truth-mod2-tablet.png" >
+							<img srcset="images/truth-mod2.png" alt="" />
+						</picture>
+						
+						<div class="blink1">&nbsp;</div>
+						<div class="blink2">&nbsp;</div>
+						<div class="slide1">&nbsp;</div>
+						<div class="slide2">&nbsp;</div>
+						<a id="Ttrigger3" href="#Truth-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<a id="Ttrigger4" href="#Truth-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+					</div>
+					
+					
+				</div>
+				<div class="col3">
+					<h2 >Single <br class="hidden-mobile"/>view of the <br/>customer</h2>
+					<div class="title-line"></div>
+					<div class="info">
+						<p>This data is cleansed, de-duped, keyed and placed into a customer database platform, centralizing a 360-degree view of each customer into a single view. This means that we will know who our audience is and can deliver a timely, relevant message to them.</p>
+						<p></p>
+						<!--<p>This simplifies audience selection as campaigns are built to support the 5 stages of the customer lifecycle: Acqusition, Onboarding, Nurture, Renewal and Winback.</p> -->
+					</div>
+				</div>
+			</div>
+				
+			<div id="Rules" class="section">
+				<div class="col1 white-popup" id="Rules-popup">
+					<h2><span class="r-trigger1 none">Automated communication process</span></h2>
+					<div class="title-line"></div>
+					<div class="info r-trigger1 none"><p>The communication orchestration process enables immersive integration across media  channels with optimal, proactive personalization based upon customer interaction and available signals. </p></div>
+					<div class="close"><img src="images/close.png" alt="close" /></div>
+				</div>
+				<div class="col2">
+					<div class="rules-container">
+						<div class="signal-stream">
+							<img src="images/signals-line.png" class="signal-line1" alt="representation of moving signal" data-no-retina/>
+							<img src="images/signals-line.png" class="signal-line2" alt="representation of moving signal" data-no-retina/>
+						</div>
+						<picture>
+							<source media="(max-width: 599px)" srcset="images/rules-mobile.png" >
+							<img src="images/rules.png" alt="rules device" class="blue-gear" />
+						</picture>
+						
+						<div id="gear">
+							<img class="triangle item" src="images/triangle.png" alt="" data-no-retina/>
+							<img class="circle item" src="images/circle.png" alt="" data-no-retina/>
+							<img class="lines item" src="images/lines.png" alt="" data-no-retina/>
+							<img class="square item" src="images/square.png" alt="" data-no-retina/>
+						</div>
+						<a id="Rtrigger1" href="#Rules-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<div id="Rotate">
+							<img src="images/gear1.png" alt="" class="gear1" />
+							<img src="images/gear2.png" alt="" class="gear2" />
+							<img src="images/gear3.png" alt="" class="gear3" />
+							<span class="gear1-T">T</span>
+							<span class="gear2-C">C</span>
+							<span class="gear3-V">V</span>
+						</div>
+					
+						<div class="horizontal-line">
+							<picture>
+								<source media="(max-width: 768px)" srcset="images/horizontal-line-tablet.png" >
+								<img src="images/horizontal-line.png" alt=""/>
+							</picture>
+
+						</div>
+					</div>
+				</div>
+				<div class="col3">
+					<h2>Marketing <br/>rules <br class="hidden-mobile"/>applied</h2>
+					<div class="title-line"></div>
+					<div class="info">
+						<p>Now that we have a single source of truth about our customers and can track their behavior and activity, we can apply marketing rules to that data.</p>
+						<p>These rules are configured and automated to orchestrate personalization of content, timing, and versioning for each channel&mdash;at a much larger scale than is possible in today’s more manual environment.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="Deployment" class="section">
+				<div class="col1 white-popup" id="Deployment-popup">
+					<h2>
+						<span class="d-trigger1 none">Email</span>
+						<span class="d-trigger2 none">Websites</span>
+						<span class="d-trigger3 none">Display ads <br/> &amp; Social</span>
+						<span class="d-trigger4 none">Display ads <br/> &amp; Social</span>
+						<span class="d-trigger5 none">Direct mail</span>
+						<span class="rmd none">RDM</span>
+						<span class="da none">DA</span>
+						<span class="rtd none">RTD</span>
+						<span class="esp none">ESP</span>
+						<span class="aem none">AEM</span>
+						<span class="aa none">AA</span>
+						<span class="at none">AT</span>
+						<span class="sc none">SC</span>
+						<span class="dmp none">DMP</span>
+						<span class="dm none">DM</span>
+					</h2>
+					<div class="title-line"></div>
+					<div class="info d-trigger1 none">
+						<p class="desktop">Rollover each rectangle for more information.</p>
+						<p class="tablet-mobile">Tool flow for email. Select each rectangle for more information.</p>
+					</div>
+					<div class="info d-trigger2 none">
+						<p class="desktop">Rollover each rectangle for more information.</p>
+						<p class="tablet-mobile">Tool flow for websites. Select each rectangle for more information.</p>
+					</div>
+					<div class="info d-trigger3 d-trigger4 none">
+						<p class="desktop">Rollover each rectangle for more information.</p>
+						<p class="tablet-mobile">Tool flow for display and social. Select each rectangle for more information.</p>
+					</div>
+					<div class="info d-trigger5 none">
+						<p class="desktop">Rollover each rectangle for more information.</p>
+						<p class="tablet-mobile">Tool flow for direct mail. Select each rectangle for more information.</p>
+					</div>
+					<div class="info rmd none">
+						<p class="sub-title">Reporting Data-Mart − </p>
+						<p>Using centralized targeting and order data, develop centralized reporting that can be used to connect the dots at the individual and company level and link to lead level analytics. Information is used to adapt future communications to ensure efficient use of marketing spend. </p>
+						<p class="ps">TO BE COMPLETED IN 2019</p>
+					</div>
+					<div class="info da none">
+						<p class="sub-title">Deep Analytics − </p>
+						<p>Linking of all channels within the data repositories (CDM and RDM) to get a true path to purchase picture for every touchpoint for every customer, resulting in advanced segmentation and modeling for optimization of future communications. </p>
+						<p class="ps">TO BE COMPLETED IN 2019 </p>
+					</div>
+					<div class="info rtd none">
+						<p class="sub-title">Real-Time Decisioning − </p>
+						<p>Activating pooled customer data and touchpoints through an omni-channel decision engine to ensure that each customer is receiving the most relevant message at the right time.</p>
+						<p class="ps">TO BE COMPLETED IN 2020 </p>
+					</div>
+					<div class="info esp none">
+						<p class="sub-title">Email Service Provider − </p>
+						<p>Strategic relationships with agency partners to enable the most efficient execution, development and deployment of email communications.</p>
+					</div>
+					<div class="info aem none">
+						<p class="sub-title">Adobe Experience Manager − </p>
+						<p>Enables comprehensive digital strategies by leveraging five key inputs—site, assets, apps, forms and communities—to develop a comprehensive digital strategy across screens to facilitate a communications across all devices leveraged by the customer.</p>
+					</div>
+					<div class="info aa none">
+						<p class="sub-title">Adobe Analytics − </p>
+						<p>A web analytics solution that empowers understanding of customers as people and is used to steer marketing with actionable insights.</p>
+					</div>
+					<div class="info at none">
+						<p class="sub-title">Adobe Target − </p>
+						<p>A personalization solution that facilitates the identification of the most responsive content through quick-turn tests. Continuous testing supports the ongoing delivery of the right experience to the right customer.  </p>
+						<p class="ps">TO BE COMPLETED IN 2018</p>
+					</div>
+					<div class="info sc none">
+						<p class="sub-title">Secure Connect − </p>
+						<p>A tool that is part of the DMP implementation that anonymizes customers to enable suppression or prioritization of online banner ad and targeting efforts to existing customers for a better online experience and cost savings.</p>
+					</div>
+					<div class="info dmp none">
+						<p class="sub-title">Adobe Audience Manager − </p>
+						<p>An audience management platform that collects demographic, psychographic and behavioral intelligence for online audiences.</p>
+						<p class="ps"></p>
+					</div>
+					<div class="info dm none">
+						<p class="sub-title">Direct Mail Provider − </p>
+						<p>Strategic relationships with agency partners enable the most efficient execution of printing, postage and fulfillment of communication pieces.</p>
+					</div>
+					<div class="close"><img src="images/close.png" alt="close" /></div>
+				</div>
+				<div class="col2">
+					<div class="deployment-container">
+						<img src="images/deployment.png" alt="" />
+						<div id="RMD" class="deployment-item init" href="#Deployment-popup"><img src="images/RMD-sprite.png" alt="" class="none"></div>
+						<div id="DA" class="deployment-item init" href="#Deployment-popup"><img src="images/DA-sprite.png" alt="" class="none"></div>
+						<div id="RTD" class="deployment-item init" href="#Deployment-popup"><img src="images/RTD-sprite.png" alt="" class="none"></div>
+						<div id="ESP" class="deployment-item init" href="#Deployment-popup"><img src="images/ESP-sprite.png" alt="" class="none"></div>
+						<div id="AEM" class="deployment-item init" href="#Deployment-popup"><img src="images/AEM-sprite.png" alt="" class="none"></div>
+						<div id="AA" class="deployment-item init" href="#Deployment-popup"><img src="images/AA-sprite.png" alt="" class="none"></div>
+						<div id="AT" class="deployment-item init" href="#Deployment-popup"><img src="images/AT-sprite.png" alt="" class="none"></div>
+						<div id="SC" class="deployment-item init" href="#Deployment-popup" ><img src="images/SC-sprite.png" alt="" class="none"></div>
+						<div id="DMP" class="deployment-item init" href="#Deployment-popup"><img src="images/DMP-sprite.png" alt="" class="none"></div>
+						<div id="DM" class="deployment-item init" href="#Deployment-popup"><img src="images/DM-sprite.png" alt="" class="none"></div>
+						<a id="Dtrigger1" class="dtrigger init" href="#Deployment-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<a id="Dtrigger2" class="dtrigger init" href="#Deployment-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<a id="Dtrigger3" class="dtrigger init" href="#Deployment-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<a id="Dtrigger4" class="dtrigger init" href="#Deployment-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<a id="Dtrigger5" class="dtrigger init" href="#Deployment-popup"><img src="images/icon-plus.png" alt="trigger" class="pulse"/></a>
+						<div class="streams">
+							<div class="triangle-stream">
+								<img src="images/triangle-stream.png" alt="" class="triangle-stream1" data-no-retina/>
+								<img src="images/triangle-stream.png" alt="" class="triangle-stream2" data-no-retina/>
+							</div>
+							<div class="circle-stream">
+								<img src="images/circle-stream.png" alt="" class="circle-stream1" data-no-retina/>
+								<img src="images/circle-stream.png" alt="" class="circle-stream2" data-no-retina/>
+							</div>
+							<div class="line-stream">
+								<img src="images/line-stream.png" alt="" class="line-stream1" data-no-retina/>
+								<img src="images/line-stream.png" alt="" class="line-stream2" data-no-retina/>
+							</div>
+							<div class="square-stream">
+								<img src="images/square-stream.png" alt="" class="square-stream1" data-no-retina/>
+								<img src="images/square-stream.png" alt="" class="square-stream2" data-no-retina/>
+							</div>
+						</div>
+					</div>
+					
+					<div class="analysis-container hidden-mobile">
+						<picture>
+							<source media="(max-width: 599px)" srcset="images/analysis-mobile.png" >
+							<img src="images/analysis.png" alt="" class="analysis-img"/>
+						</picture>
+						<div class="analysis-rain">
+							<img src="images/analysis-grid.png" class="analysis-grid1" alt="representation of moving signal" data-no-retina/>
+							<img src="images/analysis-grid.png" class="analysis-grid2" alt="representation of moving signal" data-no-retina/>
+						</div>
+					
+					</div>
+				</div>
+				<div class="col3">
+					<h2>Deployment</h2>
+					<div class="title-line"></div>
+					<div class="info">
+						<p>Customer communications are deployed across digital and offline channels and are prioritized by how the customer has engaged with AT&amp;T Business. (EM, DM, Catalog/ Magazine, Display, Social) </p>
+					</div>
+					
+					<div id="Analysis" class="hidden-mobile">
+						<h2>Analysis</h2>
+						<div class="title-line"></div>
+						<div class="info">
+							<p>Customer behavior, interaction and/or purchase is captured, and the data is sent back to the master data platform to update the customer record. Behavior is analyzed continuously and informs the timing, message and media for the next-best communication, message and offer.</p>
+							<p>Start the process again.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="Analysis-Mobile" class="section">
+				<div class="col1">
+					
+				</div>
+				<div class="col2">
+					<div class="analysis-container mobile">
+						<img src="images/analysis-top-mobile.png" alt=""  class="top"/>
+						<div class="analysis-stream-mobile">
+							<img src="images/analysis-stream-mobile.png" class="analysis-mobile-grid1" alt="representation of moving signal" data-no-retina/>
+							<img src="images/analysis-stream-mobile.png" class="analysis-mobile-grid2" alt="representation of moving signal" data-no-retina/>
+						</div>
+						<img src="images/analysis-mobile.png" alt=""  class="bottom"/>
+						<div class="analysis-grid-mobile">
+							<img src="images/analysis-mobile-grid.png" class="analysis-grid-mobile1" alt="representation of moving signal" data-no-retina/>
+							<img src="images/analysis-mobile-grid.png" class="analysis-grid-mobile2" alt="representation of moving signal" data-no-retina/>
+						</div>
+					</div>
+				</div>
+				<div class="col3">
+					<h2>Analysis</h2>
+						<div class="title-line"></div>
+						<div class="info">
+							<p>Customer behavior, interaction and/or purchase is captured, and the data is sent back to the master data platform to update the customer record. Behavior is analyzed continuously and informs the timing, message and media for the next-best communication, message and offer.</p>
+							<p>Start the process again.</p>
+						</div>
+				</div>
+			</div>
+			
+			<div id="Footer"> 
+				<p>Coming soon: Customer Centric in Action</p>
+			</div>
+			
+		</div>
+		<script src="js/retina.min.js"></script>
+	</body>
+</html>

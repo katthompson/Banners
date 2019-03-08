@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="ad.size" content="width=728,height=90" />
+		<title>DelMonte | 728x90</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+		<style type="text/css">
+			* {box-sizing:border-box;}
+			body { padding: 0; margin:0; width:728px; height:90px;}
+			img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;}		
+			#animation {overflow:hidden; width:728px; height:90px; position:relative;}
+			#backAnimation {width:728px; height:90px; position:relative;}
+			#frontAnimation {width:728px; height:90px; left:0; top:0; position:absolute}				
+			#kernels {width:728px; height:90px; left:0; top:0; position:absolute;}
+			#hands {left:434px; top:-33px;}
+			#txt-picked {left:21px; top:26px;}			
+			#txt-only-the-best-goes-in {left:21px; top:26px;opacity:0;}			
+			#txt-group {position:absolute;}
+			#logo {bottom:11px; left:602px;}
+			.kernel { transform:scale(0);z-index: 2}
+			
+			#kernel1 {left:480px; top:10px;} 
+			#kernel2 {left:485px; top:10px;}
+			#kernel3 {left:480px; top:25px;}
+			#kernel4 {left:485px; top:20px;}
+			#kernel5 {left:480px; top:25px;}
+			#kernel6 {left:485px; top:20px;}
+			#can-green-beans {left:591px; top:3px;}
+			#can-green-beans-small {left:412px; bottom:-90px;}
+			#txt-just-corn {left:0; top:16px; opacity:0;}
+			#txt-nothing-else {left:337px; top:17px; opacity:0;}			
+			#can-peas {right:-125px; top:224px;}
+			#can-corn {left:-125px; top:224px;}
+			#txt-counts {top:19px; left:0; opacity:0;}
+			#button {bottom:31px; right:10px; opacity:0;}
+			#legal {bottom:0; right:4px; opacity:0;}
+		</style>
+
+		<script type="text/javascript">
+			var clickTag = "blank"; 
+		</script>
+
+	</head>
+
+	<body>	
+		<a id="cta" href="javascript:window.open(window.clickTag)">
+			<div id="animation">
+				<div id="backAnimation">
+					<img id="background-table" src="background-table.jpg" />
+					<img id="txt-just-corn" src="txt-just-corn.png" />
+					<img id="txt-nothing-else" src="txt-nothing-else.png" />
+					
+					<img id="can-green-beans-small" src="can-green-beans-small.png" />
+					<img id="can-green-beans" src="can-green-beans.png" />
+					<img id="txt-counts" src="txt-counts.png" />
+					<img id="button" src="button.png" />
+					<img id="legal" src="legal.png" />
+				</div>
+				<div id="frontAnimation">										
+					<img id="background-leaves" src="background-leaves.png" />
+					<img id="hands" src="hands.png" />
+					<img id="txt-picked" src="txt-picked.png" />				
+					
+					<img id="txt-only-the-best-goes-in" src="txt-only-the-best-goes-in.png" />
+					
+					<img id="logo" src="logo.png" />		
+				</div>				
+				<div id="kernels">					
+					<img id="kernel1" class="kernel " src="green-bean.png" />
+					<img id="kernel5" class="kernel" src="green-bean2.png" />
+					<img id="kernel4" class="kernel" src="green-bean3.png" />
+					<img id="kernel3" class="kernel" src="green-bean4.png" />
+					<img id="kernel2" class="kernel" src="green-bean.png" />
+					<img id="kernel6" class="kernel" src="green-bean2.png" />
+				</div>
+			</div>
+		</a>
+
+		<script>
+			var tl = new TimelineMax({});
+			tl
+			.to('#txt-picked', 0.5, {opacity:0},1.8 )
+			.to('#txt-only-the-best-goes-in',0.5, {opacity:1 },2.5)	
+			.to('#txt-only-the-best-goes-in, #logo',0.5, {opacity:0 }, 4.0)
+			.to('#background-leaves', 0.5, {left:-205}, 4.5 )
+			.to('#frontAnimation', 1.5, {left:-600}, 4.8)  
+			
+			.to('#txt-just-corn', 0.5, {opacity:1}, 5.7)
+			.to('#txt-just-corn', 0.5, {opacity:0}, 8) 
+			
+			.to('#txt-nothing-else', 0.5, {opacity:1}, 8.5)
+			.to('#txt-nothing-else', 0.5, {opacity:0}, 10.8)
+			
+			.to('#can-green-beans', 0.5, {top:100},11)
+			.to('#can-green-beans-small', 0.5, {bottom:0},11.5)
+			.to('#txt-counts', 0.5, {opacity:1}, 12)
+			.to('#button', 0.5, {opacity:1}, 12)
+			.to('#legal', 0.5, {opacity:1}, 12)  
+			;
+			
+			
+			TweenMax.set('#kernel1', {scale:0, rotation:0});
+			TweenMax.set('#kernel2', {scale:0, rotation:-10});
+			TweenMax.set('#kernel3', {scale:0, rotation:30});
+			TweenMax.set('#kernel4', {scale:0, rotation:-20});
+			TweenMax.set('#kernel5', {scale:0, rotation:40});
+			TweenMax.set('#kernel6', {scale:0, rotation:0});
+			
+			var corntl = new TimelineMax();
+			corntl
+			
+			.to('#kernel1', 0.3, {scale:0.7}, 3.4)
+			.to('#kernel1', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:640, top:-8}]}}, 3.4)
+			.to('#kernel1', 1, {rotation:120}, 3.4)
+			.to('#kernel1', 0.3, {scale:0.5}, 4.4)
+			
+			.to('#kernel2', 0.3, {scale:0.7}, 3.6)
+			.to('#kernel2', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:645, top:-8}]}}, 3.6)
+			.to('#kernel2', 1, {rotation:150}, 3.6)
+			.to('#kernel2', 0.3, {scale:0.5}, 4.6)
+			
+			.to('#kernel3', 0.3, {scale:0.7}, 3.8)
+			.to('#kernel3', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:635, top:-8}]}}, 3.8)
+			.to('#kernel3', 1, {rotation:180}, 3.8)
+			.to('#kernel3', 0.3, {scale:0.5}, 4.8)
+			
+			.to('#kernel4', 0.3, {scale:0.7}, 4)
+			.to('#kernel4', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:645, top:-8}]}}, 4)
+			.to('#kernel4', 1, {rotation:230}, 4)
+			.to('#kernel4', 0.3, {scale:0.5}, 5)
+			
+			.to('#kernel5', 0.3, {scale:0.7}, 4.2)
+			.to('#kernel5', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:640, top:-8}]}}, 4.2)
+			.to('#kernel5', 1, {rotation:250}, 4.2)
+			.to('#kernel5', 0.3, {scale:0.5}, 5.2)
+			
+			.to('#kernel6', 0.3, {scale:0.7}, 3.4)
+			.to('#kernel6', 2, {bezier:{curviness:1, values:[{left:595, top:-20},{left:645, top:-8}]}},3.4)
+			.to('#kernel6', 1, {rotation:120}, 3.4)
+			.to('#kernel6', 0.3, {scale:0.5}, 4.4)
+			
+			
+			.to('.kernel', 0.5, {opacity:0}, 5.8)
+			;
+		</script>
+
+
+	</body>
+</html>

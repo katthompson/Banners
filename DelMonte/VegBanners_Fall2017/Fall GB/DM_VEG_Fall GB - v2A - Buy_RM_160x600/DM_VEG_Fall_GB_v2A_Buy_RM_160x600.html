@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="ad.size" content="width=160,height=600" />
+		<title>DelMonte | 160x600</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+		<style type="text/css">
+			* {box-sizing:border-box;}
+			body { padding: 0; margin:0; width:160px; height:600px;}
+			img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;}
+			#animation {overflow:hidden; width:160px; height:600px; position:relative;}
+			#backAnimation {width:160px; height:600px; position:relative;}
+			#frontAnimation {width:362px; height:600px; left:0; top:0; position:absolute; }
+			#txt-picked-when-perfect {left:6px; top:63px;}
+			#txt-means-your-holiday-meals {left:7px; top:40px; opacity:0;}
+			#logo {bottom:15px; left:78px;}
+			#kernel1 {left:100px; top:339px;}
+			#kernel2 {left:95px; top:339px; }
+			#kernel3 {left:90px; top:339px; }
+			#kernel4 {left:85px; top:380px;}
+			#kernel5 {left:75px; top:380px; }
+			#kernel6 {left:65px; top:350px; }
+			#casserole {top:270px; left:-23px;}
+			#txt-classic-green-bean-casserole {bottom:102px; left:7px;}
+			#can-green-beans {top:255px; right:-143px;}
+			#txt-warm-up-the-table {left:11px; top:26px; opacity:0;}
+			#txt-counts {top:25px; left:14px; opacity:0;}
+			#button {bottom:-29px; left:27px; opacity:1;}
+			#legal {bottom:-52px; left:43px; opacity:1;}
+			#lights-on {top:122px; left:-6px; opacity:0;}
+			#hand {bottom:0px; left:0; opacity:1;}
+			#background-leaves {top:0; left:0px; opacity:1;}
+		</style>
+
+		<script type="text/javascript">
+			var clickTag = "blank";
+		</script>
+
+	</head>
+
+	<body>
+
+		<a id="cta" href="javascript:window.open(window.clickTag)">
+			<div id="animation">
+				<div id="backAnimation">
+					<img id="background-table" src="background-table.jpg" />
+					<img id="txt-warm-up-the-table" src="txt-warm-up-the-table.png" />
+
+					<img id="casserole" src="casserole.png" />
+					<img id="can-green-beans" src="can-green-beans.png" />
+					<img id="lights-on" src="lights-on.png" />
+					<img id="txt-classic-green-bean-casserole" src="txt-classic-green-bean-casserole.png" />
+					<img id="txt-counts" src="txt-counts.png" />
+					<img id="button" src="button.png" />
+					<img id="legal" src="legal.png" />
+				</div>
+				<div id="frontAnimation">
+					<img id="background-leaves" src="background-leaves-hands.png" />
+					<img id="txt-picked-when-perfect" src="txt-picked-when-perfect.png" />
+					<img id="hand" src="hand.png" />
+					<img id="txt-means-your-holiday-meals" src="txt-means-your-holiday-meals.png" />
+					<img id="logo" src="logo.png" />
+				</div>
+				<div id="kernels">
+					<img id="kernel1" class="kernel " src="green-bean.png" />
+					<img id="kernel5" class="kernel" src="green-bean2.png" />
+					<img id="kernel4" class="kernel" src="green-bean3.png" />
+					<img id="kernel3" class="kernel" src="green-bean4.png" />
+					<img id="kernel2" class="kernel" src="green-bean.png" />
+					<img id="kernel6" class="kernel" src="green-bean2.png" />
+				</div>
+			</div>
+		</a>
+
+		<script>
+			var tl = new TimelineMax({});
+			tl
+			.to('#txt-picked-when-perfect', 0.5, {opacity:0},1.8 )
+			.to('#txt-means-your-holiday-meals',0.5, {opacity:1 },2.5)
+			.to('#logo', 0.5, {opacity:0}, 4.1)
+			.to('#txt-means-your-holiday-meals', 0.5, {opacity:0}, 4.1)			
+			.to('#background-leaves', 3.8, {left:-254}, 4.4)
+			.to('#hand', 3.3, {left:-207}, 5)
+			.to('#txt-warm-up-the-table', 0.5, {opacity:1}, 6.8)
+			.to('#lights-on', 0.5, {opacity:1}, 6.8)
+			.to('#txt-warm-up-the-table', 0.5, {opacity:0}, 9.1)
+			.to('#txt-classic-green-bean-casserole', 0.5, {opacity:0}, 9.1)
+			.to('#can-green-beans', 1, {right:-17, ease: Power1.easeOut},9.6)
+			.to('#casserole', 0.5, {left:-60, ease: Power1.easeOut}, 10.1)
+
+			.to('#txt-counts', 1, {opacity:1}, 10.6)
+			.to('#button', 1, {bottom:75, ease: Power1.easeOut}, 10.6)
+			.to('#legal', 1, {bottom:-14, ease: Power1.easeOut}, 10.6)
+			;
+
+			//greensock loses css transformation info so need to set it here
+			TweenMax.set('#kernel1', {scale:0, rotation:0});
+			TweenMax.set('#kernel2', {scale:0, rotation:-10});
+			TweenMax.set('#kernel3', {scale:0, rotation:30});
+			TweenMax.set('#kernel4', {scale:0, rotation:-20});
+			TweenMax.set('#kernel5', {scale:0, rotation:40});
+			TweenMax.set('#kernel6', {scale:0, rotation:0});
+
+			var corntl = new TimelineMax();
+			corntl
+
+			.to('#kernel1', 0.3, {scale:1}, 4.1)
+			.to('#kernel1', 2, {bezier:{curviness:1, values:[{left:40, top:0},{left:100, top:290}]}}, 4.1)
+			.to('#kernel1', 1, {rotation:120}, 4.1)
+			.to('#kernel1', 0.3, {scale:0.5}, 5.1)
+
+			.to('#kernel2', 0.3, {scale:1}, 4.3)
+			.to('#kernel2', 2, {bezier:{curviness:1, values:[{left:60, top:0},{left:120, top:290}]}}, 4.3)
+			.to('#kernel2', 1, {rotation:130}, 4.3)
+			.to('#kernel2', 0.3, {scale:0.5}, 5.3)
+
+			.to('#kernel3', 0.3, {scale:1}, 4.5)
+			.to('#kernel3', 2, {bezier:{curviness:1, values:[{left:60, top:0},{left:100, top:290}]}}, 4.5)
+			.to('#kernel3', 1, {rotation:140}, 4.5)
+			.to('#kernel3', 0.3, {scale:0.5}, 5.5)
+
+			.to('#kernel4', 0.3, {scale:1}, 4.7)
+			.to('#kernel4', 2, {bezier:{curviness:1, values:[{left:60, top:0},{left:120, top:290}]}}, 4.7)
+			.to('#kernel4', 1, {rotation:150}, 4.7)
+			.to('#kernel4', 0.3, {scale:0.5}, 5.7)
+
+			.to('#kernel5', 0.3, {scale:1}, 4.9)
+			.to('#kernel5', 2, {bezier:{curviness:1, values:[{left:60, top:0},{left:120, top:290}]}}, 4.9)
+			.to('#kernel5', 1, {rotation:120}, 4.9)
+			.to('#kernel5', 0.3, {scale:0.5}, 5.9)
+
+			.to('#kernel6', 0.3, {scale:1}, 5.1)
+			.to('#kernel6', 2, {bezier:{curviness:1, values:[{left:60, top:0},{left:100, top:290}]}},5.1)
+			.to('#kernel6', 1, {rotation:120}, 5.1)
+			.to('#kernel6', 0.3, {scale:0.5}, 6.1)
+
+			.to('.kernel', 0.5, {opacity:0}, 6.5)
+			;
+
+		</script>
+	</body>
+</html>

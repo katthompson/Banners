@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Natures Way Umcka</title>
+	<style type="text/css" media="screen">
+		html, body { width:300px; height:250px; margin:0; padding:0; } 
+	    * { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+		body { background-color:#fff; font-family: Arial, sans-serif; }
+	    img { display:block; border:none; position:absolute; }
+		p {margin:0;}
+		#banner {position:relative; overflow:hidden; width:300px; height:250px;}
+		.sky {top:0; left:-100px;}
+		.mountain {left:5px; bottom:12px;}
+		.txt-carefully-sourced {top:30px; left:31px;}
+		.txt-cut-off {top:59px; left:33px; transform:scale(1.05); opacity:0;}
+		.txt-we-go-where {top:30px; left:71px; transform:scale(1.05); opacity:0;}
+		.txt-umckaloabo {top:50px; left:23px; transform:scale(1.05); opacity:0;}
+		.man {opacity:0; transform:scale(2.7); top:-38px; left:57px;}
+		.txt-discover-the-way {top:38px; left:142px; transform:scale(1.05); opacity:0;}
+		.txt-to-faster-recovery {top:95px; left:154px; transform:scale(1.05); opacity:0;}
+		.button {right:43px; bottom:107px; opacity:0;}
+		
+	</style>
+	<script type="text/javascript">var clickTag = "blank";</script>
+</head>
+<body>
+	<a href="javascript:window.open(window.clickTag)">
+		<div id="banner">
+			<img class="logo" src="300x250-nw-herbs-logo.png" />
+			<img class="sky" src="sky.jpg" />
+			<img class="mountain" src="mountain.png" />
+			<img class="txt-carefully-sourced" src="txt-carefully-sourced.png" />
+			<img class="txt-cut-off" src="txt-to-cut-off-your-cold.png" />
+			<img class="txt-we-go-where" src="txt-we-go-where.png" />
+			<img class="txt-umckaloabo" src="txt-umckaloabo.png" />
+			<img class="man" src="man.png" />
+			<img class="txt-discover-the-way" src="txt-discover-the-way.png" />
+			<img class="txt-to-faster-recovery" src="txt-to-faster-recovery.png" />
+			<img class="button" src="button.png" />
+			
+			<img class="frame" src="frame.png" />
+				
+				
+		</div>
+	</a>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script>
+		var tl = new TimelineMax({ repeat: 0 });
+		
+		tl
+		.to('.sky', 15, {x:-259, ease:Power0.easeNone}, 0)
+		.to('.txt-cut-off', 0.4, {opacity:1, scale:1}, 0.8)
+		.to('.txt-carefully-sourced', 0.5, {opacity:0}, 2.5)
+		.to('.txt-cut-off', 0.5, {opacity:0}, 2.5)
+		.to('.txt-we-go-where', 0.4, {opacity:1, scale:1}, 3.3)
+		.to('.txt-umckaloabo', 0.4, {opacity:1, scale:1}, 4.5)
+		.to('.txt-we-go-where', 0.5, {opacity:0}, 7.6)
+		.to('.txt-umckaloabo', 0.5, {opacity:0}, 7.6)
+		.to('.man', 2.7, { y:30, x:-54, scale:1, opacity:1, rotationZ:0.01, ease:Expo.easeOut, force3D:false}, 8.1)
+		.to('.txt-discover-the-way', 0.4, {opacity:1, scale:1}, 10.2)
+		.to('.txt-to-faster-recovery', 0.4, {opacity:1, scale:1}, 11.5)
+		.to('.button', 0.5, {opacity:1}, 12.5)
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="ad.size" content="width=320,height=50">
+	<title>Del Monte Fruit Refresher 320x50 </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+   <script type="text/javascript">
+		var clickTag = "blank"; 
+   </script>
+	<style>
+		* {box-sizing:border-box;}
+      body { padding: 0; margin:0; width:320px; height:50px; }
+		img { display:block; border:none; -ms-interpolation-mode:bicubic; position:absolute;}		
+		#animation {overflow:hidden; width:320px; height:50px; position:relative; background-color: #000;}
+		#firstAnimation {width:320px; height:50px; left:0; position:relative;}
+		#logo {bottom:7px; left:6px;}
+		#splash5 {bottom:-90px; left:150px; -ms-transform: rotate(70deg); -webkit-transform: rotate(70deg); transform: rotate(70deg); opacity:1;}
+		#splash6 {bottom:-80px; left:253px; -ms-transform: rotate(70deg); -webkit-transform: rotate(70deg); transform: rotate(70deg); opacity:1;}
+		#splash7 {top:-270px; left:79px;}
+		#splash8 {bottom:-25px; right:182px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); opacity:0;}
+		#splash9 {bottom:-4px; right:182px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); opacity:0;}
+		#splash10 {bottom:-25px; right:116px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); opacity:0;}
+		#splash11 {bottom:-4px; right:116px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); opacity:0;}
+		#splashBehindCups1 {top:-50px; left:220px; opacity:0;}
+		#mainCup {bottom:-75px; left:210px;}
+		#pineapple {bottom:-50px; left:210px;}
+		#guava2 {bottom:-42px; left:220px;}
+		#grapefruit2 {bottom:-48px; left:230px;}
+		#orange2 {bottom:-37px; right:40px;}
+		#your {left:68px; top:20px; opacity:0; height: 24px;}
+		#grapefruit3 {top:-135px; left:90px;}
+		#orange3 {top:-170px; left:110px;}
+		#pCup, #gCup { opacity:0;-ms-transform: rotate(8deg); -webkit-transform: rotate(8deg); transform: rotate(8deg;) opacity:1;}
+		#pCup {top:0px; left:243px;}
+		#gCup {top:11px; left:243px;}
+		#oCup {top:7px; left:241px; opacity:0;-ms-transform: rotate(-15deg); -webkit-transform: rotate(-15deg); transform: rotate(-15deg;) opacity:1;}
+		#package3, #package4 {top:-26px; right:165px}
+		#package1, #package2 {top:-26px; right:115px}
+		#fr {top:-38px; left:15px;}
+		#button {top:-24px; left:243px;}
+		#legal {bottom:-10px; left:237px;}
+		
+		.explosion1 {top:-10px; left:190px; transform: scale(0.1); opacity:0;}
+		.explosion11 {top:8px; left:205px; opacity:0;}
+		.explosion2 {top:-22px; left:212px; transform: scale(0.1); opacity:0;}
+		.explosion21 {top:-29px; left:198px; opacity:0;}
+		#xguava1 { transform: scale(0.1);}
+		#xguava2 { -ms-transform: rotate(200deg) scale(0.1); -webkit-transform: rotate(200deg) scale(0.1); transform: rotate(200deg) scale(0.1);}
+		#xguava3 { -ms-transform: rotate(110deg) scale(0.1); -webkit-transform: rotate(110deg) scale(0.1); transform: rotate(110deg) scale(0.1);} 
+		
+   		#xsplash1 {top:-195px; left:13px; transform: scale(0.05); opacity:0;}
+		#xsplash2 {top:-208px; left:41px; -ms-transform: rotate(240deg) scale(0.05); -webkit-transform: rotate(240deg) scale(0.05); transform: rotate(240deg) scale(0.05); opacity:0;}
+		#celebrate {top:19px; left:59px; opacity:0;}
+		#xcoconut1 { -ms-transform: rotate(-60deg) scale(0.1); -webkit-transform: rotate(-60deg) scale(0.1); transform: rotate(-60deg) scale(0.1);}
+		#xcoconut2 { -ms-transform: rotate(120deg) scale(0.1); -webkit-transform: rotate(120deg) scale(0.1); transform: rotate(120deg) scale(0.1);}
+		#xorange1 {-ms-transform: rotate(-120deg) scale(0.1); -webkit-transform: rotate(-120deg) scale(0.1); transform: rotate(-120deg) scale(0.1);}
+		#xorange2 {-ms-transform: rotate(70deg) scale(0.1); -webkit-transform: rotate(70deg) scale(0.1); transform: rotate(70deg) scale(0.1);}
+		#xorange3 {-ms-transform: rotate(180deg) scale(0.1); -webkit-transform: rotate(180deg) scale(0.1); transform: rotate(180deg) scale(0.1);}
+		#refreshing {top:18px; left:59px; opacity:0;}
+		
+	</style>
+</head>
+<body >  <!-- comments left in for banner development updates, remove before hand-off -->
+	<a id="cta" href="javascript:window.open(window.clickTag)">
+		<div id="animation">
+			<div id="firstAnimation">
+				<img id="splash5" src="splash1.png" width="82" height="76" />
+				<img id="splash7" src="splash1.png" width="150" height="270" /> 
+				
+				<img id="xsplash1" class="explosion11" src="fireworks_splash.png" width="422" height="440"/>
+				<img id="xsplash2" class="explosion11" src="fireworks_splash.png" width="422" height="440"/>
+				<img id="xgrapefruit1" class="explosion1" src="grapefruit.png" width="73" height="73"/>
+				<img id="xgrapefruit2" class="explosion1" src="grapefruit.png" width="73" height="73"/>
+				<img id="xguava1" class="explosion11" src="guava.png" width="41" height="41"/>
+				<img id="xguava2" class="explosion11" src="guava.png" width="41" height="41"/>
+				<img id="xguava3" class="explosion11" src="guava.png" width="41" height="41"/>
+				
+				<img id="celebrate" src="celebrate.png"/>
+				<img id="xcoconut1" class="explosion2" src="coconut.png" width="49" height="52"/>
+			
+				<img id="xorange1" class="explosion21" src="orange.png" width="76" height="70"/>
+				<img id="xorange2" class="explosion21" src="orange.png" width="76" height="70"/>	
+				
+				<img id="refreshing" src="refreshing.png"/>
+				
+				<img id="grapefruit3" src="grapefruit.png" width="85" height="85" />
+				<img id="orange3" src="orange2.png" width="35" height="36" />
+				<img id="pineapple" src="pineapple.png" width="44" height="48" />
+				<img id="guava2" src="guava.png" width="20" height="19" />
+				<img id="orange2" src="orange2.png" width="35" height="36" />
+				<img id="splash6" src="splash2.png"  width="63" height="47" />
+				<img id="grapefruit2" src="grapefruit.png" width="47" height="44" />
+				<img id="your" src="your.png" />
+				<img id="splashBehindCups1" src="splash1.png" width="79" height="140" />
+				<img id="gCup" src="grapefruit_cup.png" width="31" height="33" />
+				<img id="pCup" src="pineapple_cup.png" width="34" height="46" />
+				<img id="oCup" src="orange_cup.png" width="40" height="38" />
+				<img id="mainCup" src="main_cup.png" width="68" height="74"  />
+				<img id="logo" src="logo.png" width="43" height="33" />
+			</div>
+			<img id="splash8" src="splash1.png" width="23" height="75" />
+			<img id="splash9" src="splash1.png" width="23" height="75" />
+			<img id="splash10" src="splash1.png" width="23" height="75" />
+			<img id="splash11" src="splash1.png" width="23" height="75" />
+			<img id="package1" src="package1.png" width="45" height="25" />			
+			<img id="package2" src="package2.png" width="47" height="25" />	
+			<img id="package3" src="package3.png" width="46" height="25" />	
+			<img id="package4" src="package4.png" width="45" height="24" />
+			<img id="fr" src="fruit-refreshers.png" width="48" height="37" />	
+			<img id="button" src="cta.png" width="62" height="23" />	
+			<img id="legal" src="legal.png" width="68" height="6" /> 		
+			
+		</div>
+	</a>
+	<script>
+		var tl = new TimelineMax({});
+		tl.to('#xsplash1',0.1, {opacity:1}, 0.3)
+		.to('#xsplash1',2.0, {scale:1}, 0.4)
+		.to('#xsplash1',1, {opacity:0}, 1.5)
+		.to('#xgrapefruit1',0.1, {opacity:1}, 0.5)
+		.to('#xgrapefruit1',2.3, {top:-100, left:150, scale:0.8}, 0.6)
+		.to('#xgrapefruit2',0.1, {opacity:1}, 0.5)
+		.to('#xgrapefruit2',2.3, {top:-70, left:322, scale:1}, 0.6)
+		.to('#xguava1',0.1, {opacity:1}, 0.5)
+		.to('#xguava1',2, {top:-41, left:235, scale:1}, 0.6)
+		.to('#xguava2',0.1, {opacity:1}, 0.5).to('#xguava2',2.3, {top:57, left:120, scale:1}, 0.6)
+		.to('#xguava3',0.1, {opacity:1}, 0.5)
+		.to('#xguava3',2.3, {top:110, left:253, scale:1.0}, 0.6)
+		.to('#celebrate', 0.5, {opacity:1}, 1.5).to('#celebrate', 0.5, {opacity:0}, 3.5)
+		.to('#xsplash2',0.1, {opacity:1}, 3.2).to('#xsplash2',2.0, {scale:1}, 3.3).to('#xsplash2',1, {opacity:0}, 4.4)
+		.to('#xcoconut1',0.1, {opacity:1}, 3.5)
+		.to('#xcoconut1',2.3, {top:50, left:123, scale:1}, 3.6)
+		.to('#xorange1',0.1, {opacity:1}, 3.5)
+		.to('#xorange1',2.3, {top:-101, left:182, scale:0.5}, 3.6)
+		.to('#xorange2',0.1, {opacity:1}, 3.5).to('#xorange2',2.3, {top:48, left:310, scale:1}, 3.6)
+		.to('#refreshing', 0.5, {opacity:1}, 4.5).to('#refreshing', 0.5, {opacity:0}, 6.0)
+		.to('.explosion1', 0.1, {opacity:0}, 6.0).to('.explosion11', 0.1, {opacity:0}, 6.0).to('.explosion2', 0.1, {opacity:0}, 6.0).to('.explosion21', 0.1, {opacity:0}, 6.0)
+		.to('#mainCup', 1, {top:-5}, 5.8)
+		.to('#pineapple', 1, {bottom:-5, left:193}, 5.8)
+		.to('#guava2', 1, {bottom:-5, left:215}, 5.8)
+		.to('#grapefruit2', 1, {bottom:-14, left:244}, 5.8)
+		.to('#orange2', 1, {bottom:11, right:24}, 5.8)
+		.to('#splash5', 1, {bottom:-40, scale:1.2}, 5.8)
+		.to('#splash6', 1, {bottom:-20, scale:1.2}, 6)
+		.to('#splash5', 1.5, {opacity:0, scale:1.5}, 6.5)
+		.to('#splash6', 1.5, {opacity:0, scale:1.5}, 6.7)
+		.to('#your', 0.5, {opacity:1, ease: Power0.easeNone}, 6.0)  
+		.to('#your', 0.5, {opacity:0}, 7.5) 
+		.to('#mainCup', 1, {top:-12, scale:0.65, left:225}, 7.7)  
+		.to('#pineapple', 1, {bottom:-2, left:239, scale:0.5}, 7.7)  
+		.to('#guava2', 1, {bottom:9, left:242, scale:0.5}, 7.7)  
+		.to('#grapefruit2', 1, {bottom:3, left:235, scale:0.5}, 7.7)  
+		.to('#orange2', 1, {bottom:1, right:41, scale:0.5}, 7.7)  
+		.to('#gCup', 0.2, {opacity:1}, 7.9)  
+		.to('#pCup', 0.2, {opacity:1}, 7.9)  
+		.to('#oCup', 0.2, {opacity:1}, 7.9)  
+		.to('#gCup', 0.5, {left:212, top:12, rotation:-5},9.0)
+		.to('#pCup', 0.5, {left:225, top:-1, rotation:-3}, 9.0)
+		.to('#oCup', 0.5, {left:256, top:6, rotation:-3}, 9.0)
+		.to('#splashBehindCups1', 0.1, {opacity:1, scale:0.1, rotation:90}, 8.0)
+		.to('#splashBehindCups1', 0.5, {scale:1.1}, 9.0)
+		.to('#splashBehindCups1', 1, {opacity:0, scale:1.2}, 9.5)
+		.to('#firstAnimation', 0.5, { left:-310},10.2)
+		.to('#package4', 0.5, {top:27}, 10.7 ) 
+		.to('#package3', 0.5, {top:3}, 11.0)
+		
+		.to('#package2', 0.5, {top:3}, 11.6)
+		.to('#package1', 0.5, {top:27}, 11.3)
+		.to('#splash8', 0.5, { scale:1.3, opacity:1}, 11.1)
+		.to('#splash8', 1, { scale:1.5, opacity:0}, 11.6)
+		.to('#splash9', 0.5, { scale:1.3, opacity:1}, 11.5)
+		.to('#splash9', 1, { scale:1.5, opacity:0}, 11.9)
+		.to('#splash10', 0.5, { scale:1.3, opacity:1}, 11.8)
+		.to('#splash10', 1, { scale:1.5, opacity:0}, 12.2)
+		.to('#splash11', 0.5, { scale:1.3, opacity:1}, 12.1)
+		.to('#splash11', 1, { scale:1.5, opacity:0}, 12.5)
+		.to('#button', 0.5, {top:9}, 12.1)
+		.to('#fr', 0.5, {top:5}, 12.1)
+		.to('#legal', 0.2, {bottom:7}, 12.1)
+		;
+		
+		
+	</script>
+	
+</body>
+</html>

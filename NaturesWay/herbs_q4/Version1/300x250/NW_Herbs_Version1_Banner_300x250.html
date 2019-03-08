@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Natures Way Herbs</title>
+	<style type="text/css" media="screen">
+		html, body { width:300px; height:250px; margin:0; padding:0; } 
+	    * { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+		body { background-color:#fff; font-family: Arial, sans-serif; }
+	    img { display:block; border:none; position:absolute; }
+		p {margin:0;}
+		#banner {position:relative; overflow:hidden; width:300px; height:250px; border:1px solid #bcbec0;}
+		.logo {right:5px; bottom:0px;}
+		.sky {top:0; left:0px;}
+		.mountains {left:0px; bottom:0px;}
+		.products {left:3px; bottom:0;}
+		.txt-we-go-where {top:60px; left:76px;}
+		.txt-herbs-grow-best {top:55px; left:58px; transform:scale(1.05); opacity:0;}
+		.txt-to-growers-who-deliver {top:30px; left:71px; transform:scale(1.05); opacity:0;}
+		.farmer {opacity:0; transform:scale(3); top:0px; left:100px;}
+		.txt-to-growers-who-deliver {top:59px; left:157px; transform:scale(1.05); opacity:0;}
+		.txt-the-best-of-nature {top:47px; left:170px; transform:scale(1.05); opacity:0;}
+		.button {left:-301px; bottom:0px;}
+		
+	</style>
+	<script type="text/javascript">var clickTag = "blank";</script>
+</head>
+<body>
+	<a href="javascript:window.open(window.clickTag)">
+		<div id="banner">
+			
+			<img class="sky" src="sky.jpg" />
+			<img class="mountains" src="mountains.png" />
+			
+			<img class="txt-we-go-where" src="txt-we-go-where.png" />
+			<img class="txt-herbs-grow-best" src="txt-herbs-grow-best.png" />
+			<img class="txt-we-go-where" src="txt-we-go-where.png" />
+			<img class="farmer" src="farmer.png" />
+			<img class="txt-to-growers-who-deliver" src="txt-to-growers-who-deliver.png" />
+			<img class="txt-the-best-of-nature" src="txt-the-best-of-nature.png" />
+			<img class="button" src="button.png" />
+			
+			<img class="products" src="products.png" />
+			<img class="logo" src="logo.png" />
+		
+				
+				
+		</div>
+	</a>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script>
+		var tl = new TimelineMax({ repeat: 0 });
+		
+		tl
+		.to('.sky', 15, {x:-111, ease:Power0.easeNone}, 0)
+		.to('.txt-we-go-where', 0.4, {opacity:0}, 2)
+		.to('.txt-herbs-grow-best', 0.4, {scale:1, opacity:1}, 2.4)
+		.to('.txt-herbs-grow-best', 0.4, {opacity:0}, 4.8)
+		.to('.farmer', 2.7, { x:-100, scale:1, opacity:1, rotationZ:0.01, ease:Expo.easeOut, force3D:false}, 5.2)
+		.to('.mountains', 2.7, {y:17}, 5.2)
+		.to('.txt-to-growers-who-deliver', 0.4, {opacity:1, scale:1}, 7)
+		.to('.txt-to-growers-who-deliver', 0.4, {opacity:0}, 9.4)
+		.to('.txt-the-best-of-nature', 0.4, {opacity:1, scale:1}, 9.8)
+		.to('.button', 1, {x:301}, 11)
+		;
+		
+	</script>
+</body>
+</html>

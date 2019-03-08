@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="ad.size" content="width=728, height=90" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Natures Way Herbs Version2 728x90</title>
+		<style type="text/css" media="screen">
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			html, body {
+				width: 728px;
+				height: 90px;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background-color: #fff;
+			}
+			img {
+				display: block;
+				border: none;
+				position: absolute;
+			}
+			p {margin: 0;}
+
+			#container {
+				position: relative;
+				overflow: hidden;
+				width: 728px;
+				height: 90px;
+				border: 1px solid #bcbec0;
+			}
+			.logo {
+				left: 10px;
+				top: 29px;
+			}
+			.field-with-man {
+				top: -1px;
+				left: -1px;
+			}
+			.hills {
+				left: -1px;
+				top: -1px;
+			}
+			.txt-the-way-we-grow {
+				top: 16px;
+				left: 250px;
+			}
+			.txt-sustain {
+				top: 21px;
+				left: 247px;
+				transform: scale(1.05);
+				opacity: 0;
+			}
+			.hands {
+				top: -1px;
+				left: -1px;
+				transform: scale(3);
+				opacity: 0;
+			}
+			.txt-deliver {
+				top: 9px;
+				left: 162px;
+				transform: scale(1.05);
+				opacity: 0;
+			}
+			.txt-uncompromising-quality {
+				top: 7px;
+				left: 77px;
+				transform: scale(1.05);
+				opacity: 0;
+			}
+			.product-valerian {
+				bottom: -87px;
+				right: 179px;
+			}
+			.product-saw-palmetto {
+				bottom: -77px;
+				right: 235px;
+			}
+			.product-echinacea {
+				bottom: -77px;
+				right: 140px;
+			}
+			.txt-the-way-we-grow-together {
+				top: 13px;
+				left: 77px;
+				transform: scale(1.05);
+				opacity: 0;
+			}
+			.cta-button {
+				bottom: -20px;
+				left: 175px;
+			}
+		</style>
+		<script type="text/javascript">var clickTag = "blank";</script>
+	</head>
+	<body>
+		<a href="javascript:window.open(window.clickTag)">
+			<div id="container">
+				
+				<img class="hills" src="hills.jpg" alt="Hills" />
+				<img class="field-with-man" src="field-with-man.png" alt="Field with Man" />
+				<img class="txt-the-way-we-grow" src="txt-the-way-we-grow.png" alt="The way we grow text" />
+				<img class="txt-sustain" src="txt-sustain.png" alt="Sustain text" />
+				<img class="hands" src="hands.png" alt="Hands" />
+				
+				<img class="txt-deliver" src="txt-deliver.png" alt="Deliver text" />
+				<img class="txt-uncompromising-quality" src="txt-uncompromising-quality.png" alt="Uncompromising quality text" />
+				
+				<img class="product-saw-palmetto" src="product-saw-palmetto.png" alt="Product Saw Palmetto" />
+				<img class="product-echinacea" src="product-echinacea.png" alt="Product Echinacea" />
+				<img class="product-valerian" src="product-valerian.png" alt="Product Valerian" />
+				<img class="txt-the-way-we-grow-together" src="txt-the-way-we-grow-together.png" alt="The way we grow together text" />
+				<img class="cta-button" src="button.png" alt="CTA Button" />
+				
+				<img class="logo" src="logo.png" alt="Logo" />
+				
+			</div>
+		</a>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script type="text/javascript">
+
+			var tl = new TimelineMax({ repeat: 0 });
+			
+			tl
+			.to('.field-with-man', 5, {x:-230, ease:Power1.easeOut, rotationZ:0.01, force3D:false}, 0)
+			.to('.txt-the-way-we-grow', 0.5, {opacity:0}, 1.5)
+			.to('.txt-sustain', 0.5, {scale:1, opacity:1}, 2.2)
+			.to('.txt-sustain', 0.5, {opacity:0}, 4.8)
+			.to('.field-with-man', 1.5, {scale:3, x:-700, opacity:0, rotationZ:0.01, ease:Power1.easeOut, force3D:false}, 5)
+			.to('.hands', 1.5, {scale:1, opacity:1, rotationZ:0.01, ease:Expo.easeOut, force3D:false}, 5.2)
+			.to('.txt-deliver', 0.5, {opacity:1, scale:1}, 6)
+			.to('.txt-deliver', 0.5, {opacity:0}, 7.6)
+			.to('.hands', 2, {opacity:0}, 7.8)
+			.to('.txt-uncompromising-quality', 0.5, {opacity:1, scale:1}, 8.5)
+			.to('.product-valerian', 0.8, {y:-86}, 9.0)
+			.to('.product-saw-palmetto, .product-echinacea', 0.8 , {y:-76}, 9.5)
+			.to('.txt-uncompromising-quality', 0.5, {opacity:0}, 10.5)
+			.to('.txt-the-way-we-grow-together', 0.5, {opacity:1, scale:1}, 11.0)
+			.to('.cta-button', 0.5, {y:-19}, 12.0)
+			;
+			
+		</script>
+	</body>
+</html>
